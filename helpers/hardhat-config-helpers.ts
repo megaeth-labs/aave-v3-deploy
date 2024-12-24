@@ -175,20 +175,18 @@ export const hardhatNetworkSettings = {
   blockGasLimit: DEFAULT_BLOCK_GAS_LIMIT,
   throwOnTransactionFailures: true,
   throwOnCallFailures: true,
-  chainId: 31337,
+  chainId: 25,
   forking: buildForkConfig(),
   saveDeployments: true,
   allowUnlimitedContractSize: true,
   tags: ["local"],
   accounts:
-    FORK && !!MNEMONIC
-      ? {
+       {
           mnemonic: MNEMONIC,
           path: MNEMONIC_PATH,
           initialIndex: 0,
           count: 10,
         }
-      : undefined,
 };
 
 export const DETERMINISTIC_FACTORIES = {
