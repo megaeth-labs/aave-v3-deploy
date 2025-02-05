@@ -131,7 +131,7 @@ const func: DeployFunction = async function ({
 };
 
 // This script can only be run successfully once per market, core version, and network
-func.id = `PoolInitalization:${MARKET_NAME}:aave-v3-core@${V3_CORE_VERSION}`;
+func.id = `PoolInitialization:${MARKET_NAME}:aave-v3-core@${V3_CORE_VERSION}`;
 
 func.tags = ["market", "init-pool"];
 func.dependencies = ["before-deploy", "core", "periphery-pre", "provider"];
