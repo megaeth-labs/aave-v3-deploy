@@ -175,7 +175,7 @@ export const hardhatNetworkSettings = {
   blockGasLimit: DEFAULT_BLOCK_GAS_LIMIT,
   throwOnTransactionFailures: true,
   throwOnCallFailures: true,
-  chainId: 25,
+  chainId: 31337,
   forking: buildForkConfig(),
   saveDeployments: true,
   allowUnlimitedContractSize: true,
